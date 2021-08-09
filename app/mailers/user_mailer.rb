@@ -1,5 +1,3 @@
-Dotenv.load('../../.env')
-
 class UserMailer < ApplicationMailer
 
   # default from: 'jojo.justman@gmail.com'
