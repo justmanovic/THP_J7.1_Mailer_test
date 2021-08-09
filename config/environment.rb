@@ -1,3 +1,5 @@
+Dotenv.load('../../.env')
+
 # Load the Rails application.
 require_relative 'application'
 
@@ -5,9 +7,9 @@ require_relative 'application'
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => ENV['apikey'],
-  :password => ENV['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'],
-  :domain => 'monsite.fr',
+  :user_name => ENV['SENDGRID_LOGIN'],
+  :password => ENV['SENDGRID_PWD'],
+  :domain => 'essec.edu',
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,

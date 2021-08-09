@@ -1,4 +1,6 @@
+Dotenv.load('../../.env')
+
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'pierre.noppe@essec.edu'
   layout 'mailer'
 end
